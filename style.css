@@ -1,0 +1,145 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  line-height: 1.3; 
+  font-size: 1rem;
+  color: #eee;
+}
+
+.header {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(./images/bg-desktop.svg);   
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #eee;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  padding: .8rem 4rem;  
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #eee;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;    
+}
+
+.hero {
+  display: flex; 
+  margin: 3rem 0; 
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  flex: 3;  
+}
+
+.hero-description { 
+  flex: 2;
+  margin: 3rem 0 0 3rem;
+}
+
+.hero-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+  opacity: .8;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  border: 1px solid #eee;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #eee;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .8rem;
+}
+
+.social-icons a:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-description {     
+    margin: 1rem 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+/* Frontend mentorfooter styling */
+.attribution { font-size: 11px; text-align: center; margin-top: 4rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
